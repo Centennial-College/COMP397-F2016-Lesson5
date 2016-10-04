@@ -5,17 +5,17 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var scenes;
 (function (scenes) {
-    var Shooter = (function (_super) {
-        __extends(Shooter, _super);
-        function Shooter() {
+    var Sprite = (function (_super) {
+        __extends(Sprite, _super);
+        function Sprite() {
             _super.call(this);
         }
-        Shooter.prototype.start = function () {
+        Sprite.prototype.start = function () {
         };
-        Shooter.prototype.update = function () {
+        Sprite.prototype.update = function () {
         };
-        return Shooter;
+        return Sprite;
     }(objects.Scene));
-    scenes.Shooter = Shooter;
+    scenes.Sprite = Sprite;
 })(scenes || (scenes = {}));
-//# sourceMappingURL=shooter.js.map
+//# sourceMappingURL=sprite.js.map

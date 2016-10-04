@@ -8,6 +8,8 @@ var config;
         }
         Scene.MENU = 0;
         Scene.GAME = 1;
+        Scene.SPRITE = 2;
+        Scene.BITMAPTRANSFORM = 3;
         return Scene;
     }());
     config.Scene = Scene;

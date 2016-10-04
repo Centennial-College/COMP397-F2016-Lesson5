@@ -11,7 +11,6 @@ var scenes;
 (function (scenes) {
     var Menu = (function (_super) {
         __extends(Menu, _super);
-        // Private instance variables
         // Label or bitmap
         // Button 
         // Menu Class Contructor
@@ -19,8 +18,23 @@ var scenes;
             _super.call(this);
         }
         Menu.prototype.start = function () {
+            this._spriteBtn = new objects.Button("SpriteBtn", config.Screen.CENTER_X - 180, config.Screen.CENTER_Y);
+            this.addChild(this._spriteBtn);
+            this._spriteBtn.on('click', this._spriteBtnClick);
+            this._bitmapTransformBtn = new objects.Button("BitmapTransformBtn", config.Screen.CENTER_X + 180, config.Screen.CENTER_Y);
+            this.addChild(this._bitmapTransformBtn);
+            this._bitmapTransformBtn.on('click', this._bitmapTransformBtnClick);
+            stage.addChild(this);
         };
         Menu.prototype.update = function () {
+        };
+        Menu.prototype._spriteBtnClick = function (event) {
+            scene = config.Scene.SPRITE;
+            changeScene();
+        };
+        Menu.prototype._bitmapTransformBtnClick = function (event) {
+            scene = config.Scene.BITMAPTRANSFORM;
+            changeScene();
         };
         return Menu;
     }(objects.Scene));

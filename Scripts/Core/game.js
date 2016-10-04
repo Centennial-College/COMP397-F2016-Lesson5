@@ -9,7 +9,16 @@ var scene;
 var menuScene;
 var gameScene;
 // Preload Assets required
-var assetData = [];
+var assetData = [
+    { id: "SpriteBtn", src: "../../Assets/images/SpriteBtn.png" },
+    { id: "BitmapTransformBtn", src: "../../Assets/images/BitmapTransformBtn.png" },
+    { id: "RotateBtn", src: "../../Assets/images/Rotate.png" },
+    { id: "TranslateBtn", src: "../../Assets/images/Translate.png" },
+    { id: "BoxBlurBtn", src: "../../Assets/images/BoxBlur.png" },
+    { id: "ShadowBtn", src: "../../Assets/images/Shadow.png" },
+    { id: "ScaleBtn", src: "../../Assets/images/Scale.png" },
+    { id: "Zero", src: "../../Assets/images/Zero.png" },
+];
 function preload() {
     // Create a queue for assets being loaded
     assets = new createjs.LoadQueue(false);
@@ -51,6 +60,16 @@ function changeScene() {
             stage.removeAllChildren();
             currentScene = new scenes.Game();
             console.log("Starting GAME scene");
+            break;
+        case config.Scene.SPRITE:
+            stage.removeAllChildren();
+            currentScene = new scenes.Sprite();
+            console.log("Starting SPRITE scene");
+            break;
+        case config.Scene.BITMAPTRANSFORM:
+            stage.removeAllChildren();
+            currentScene = new scenes.BitmapTransform();
+            console.log("Starting BITMAPTRANSFORM scene");
             break;
     }
 }

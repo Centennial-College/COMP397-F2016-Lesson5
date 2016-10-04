@@ -10,5 +10,5 @@
 /// <reference path="../scenes/menu.ts" />
 /// <reference path="../scenes/game.ts" />
 /// <reference path="../scenes/bitmaptransform.ts" />
-/// <reference path="../scenes/shooter.ts" /> 
+/// <reference path="../scenes/sprite.ts" /> 
 //# sourceMappingURL=_reference.js.map

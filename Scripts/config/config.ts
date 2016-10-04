@@ -5,6 +5,8 @@ module config {
     export class Scene {
         public static MENU : number = 0;
         public static GAME : number = 1;
+        public static SPRITE : number = 2;
+        public static BITMAPTRANSFORM : number = 3;
     }
 
     export class Screen {

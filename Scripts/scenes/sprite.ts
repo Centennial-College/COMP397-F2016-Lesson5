@@ -1,5 +1,5 @@
 module scenes {
-    export class Shooter extends objects.Scene {
+    export class Sprite extends objects.Scene {
 
 
         constructor() {
