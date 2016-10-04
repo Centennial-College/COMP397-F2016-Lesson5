@@ -1,3 +1,7 @@
+/**
+ * State Machine for the demo
+ */
+
 /// <reference path = "_reference.ts" />
 
 // Global Variables
@@ -22,6 +26,8 @@ var assetData: objects.Asset[] = [
     { id: "ShadowBtn", src: "../../Assets/images/Shadow.png" },
     { id: "ScaleBtn", src: "../../Assets/images/Scale.png" },
     { id: "Zero", src: "../../Assets/images/Zero.png" },
+    { id: "Player", src: "../../Assets/images/Player.png" },
+    { id: "Bg", src: "../../Assets/images/Bg.png" },
 ];
 
 function preload() {

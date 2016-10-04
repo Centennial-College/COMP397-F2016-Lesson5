@@ -65,6 +65,8 @@ module scenes {
         }
 
         private _translateBtnClick(event: createjs.MouseEvent): void {
+            // why not just change property?
+            // this._square.x+=10;
             this._square.setTransform(
                 this._square.x + 10, this._square.y,
                 this._square.scaleX, this._square.scaleY,

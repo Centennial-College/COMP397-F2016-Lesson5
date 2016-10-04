@@ -49,6 +49,8 @@ var scenes;
         BitmapTransform.prototype.update = function () {
         };
         BitmapTransform.prototype._translateBtnClick = function (event) {
+            // why not just change property?
+            // this._square.x+=10;
             this._square.setTransform(this._square.x + 10, this._square.y, this._square.scaleX, this._square.scaleY, this._square.rotation, this._square.skewX, this._square.skewY, this._square.regX, this._square.regY);
         };
         BitmapTransform.prototype._rotateBtnClick = function (event) {

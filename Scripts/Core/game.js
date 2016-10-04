@@ -1,3 +1,6 @@
+/**
+ * State Machine for the demo
+ */
 /// <reference path = "_reference.ts" />
 // Global Variables
 var assets;
@@ -18,6 +21,8 @@ var assetData = [
     { id: "ShadowBtn", src: "../../Assets/images/Shadow.png" },
     { id: "ScaleBtn", src: "../../Assets/images/Scale.png" },
     { id: "Zero", src: "../../Assets/images/Zero.png" },
+    { id: "Player", src: "../../Assets/images/Player.png" },
+    { id: "Bg", src: "../../Assets/images/Bg.png" },
 ];
 function preload() {
     // Create a queue for assets being loaded
